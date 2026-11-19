@@ -78,7 +78,7 @@ export const AboutPage: React.FC = () => {
           verifiable business intelligence.
         </p>
 
-        <div className="mt-6 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-subtle flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-700">
+        <div className="mt-6 p-4 sm:p-5 rounded-2xl bg-white border border-slate-200/90 shadow-subtle flex items-center justify-between gap-3 text-xs text-slate-700">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center font-bold text-sm shadow-sm">
               SP
@@ -89,9 +89,6 @@ export const AboutPage: React.FC = () => {
                 Independent AI & Operations Engineering Project • Inspired by Spine
               </div>
             </div>
-          </div>
-          <div className="text-[11px] text-slate-500 sm:text-right bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200/70">
-            Not an official Spine product • Created for hiring review
           </div>
         </div>
       </div>

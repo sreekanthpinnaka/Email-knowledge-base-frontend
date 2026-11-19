@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
               <span>Built by <strong className="text-slate-700">Sreekanth Pinnaka</strong></span>
             </div>
             <p className="text-[11px] text-slate-400">
-              Independent AI & Operations Engineering Project • Inspired by the AI & Operations Associate role at Spine.
+              Independent AI & Operations Engineering Project
             </p>
           </div>
 
