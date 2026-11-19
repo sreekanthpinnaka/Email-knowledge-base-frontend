@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#fafcff] text-slate-900 font-sans antialiased;
+    background-image: 
+      radial-gradient(at 5% 0%, rgba(219, 234, 254, 0.5) 0px, transparent 45%),
+      radial-gradient(at 95% 5%, rgba(254, 249, 195, 0.45) 0px, transparent 40%),
+      radial-gradient(at 50% 95%, rgba(255, 228, 230, 0.35) 0px, transparent 50%);
+    background-attachment: fixed;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
