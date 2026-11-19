@@ -2,8 +2,6 @@
 
 A production-quality React application for **ContextFlow**, an AI-powered email knowledge base.
 
-This portfolio project was designed and implemented by **Sreekanth Pinnaka**, inspired specifically by the **AI & Operations Associate** role at **Spine**.
-
 It demonstrates end-to-end capabilities in operational workflow automation, API integration (Gmail API, n8n, OpenAI), semantic search (PostgreSQL/pgvector), resilient fallback engineering, and building trustworthy operational interfaces for cross-functional teams.
 
 ---
@@ -16,7 +14,7 @@ It demonstrates end-to-end capabilities in operational workflow automation, API 
    - Detects and gracefully handles Google Cloud Run cold starts ("Connecting to ContextFlow...").
    - Maintains stateless bearer session in browser storage without re-requesting credentials across refreshes.
 
-2. **Spine Hiring Reviewer Onboarding**
+2. **Startup**
    - 3-step interactive testing guide (Send Email &rarr; Synchronize &rarr; Ask Questions).
    - Display of the live demo mailbox (`liveprojectdemo001@gmail.com`) with one-click clipboard copying.
    - Pre-populated operational question chips for rapid evaluation.
@@ -175,11 +173,3 @@ ContextFlow frontend connects to the following FastAPI endpoints:
 | `POST` | `/api/v1/ask` | Grounded AI answer synthesis with citation validation |
 | `POST` | `/api/v1/sync` | Trigger asynchronous manual sync via n8n |
 | `GET` | `/api/v1/sync/{id}` | Poll synchronization job state in PostgreSQL |
-
----
-
-## Attribution & Independent Portfolio Statement
-
-- **Developer:** Sreekanth Pinnaka
-- **Role Alignment:** Inspired by the *AI & Operations Associate* position at Spine.
-- **Affiliation Disclaimer:** This is an independent portfolio demonstration built to showcase real-world operational AI systems engineering. It is not an official Spine product or company-sponsored deployment.
