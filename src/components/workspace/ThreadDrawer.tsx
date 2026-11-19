@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Mail,
-  ExternalLink,
   Calendar,
   User,
   Users,
@@ -47,19 +46,6 @@ export const ThreadDrawer: React.FC<ThreadDrawerProps> = ({ threadId, onClose })
         </div>
       }
       subtitle={threadId ? `Thread ID: ${threadId}` : undefined}
-      headerAction={
-        threadData?.gmail_url ? (
-          <a
-            href={threadData.gmail_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-brand-700 bg-brand-50 border border-brand-200 rounded-lg hover:bg-brand-100 transition-colors"
-          >
-            <span>Open in Gmail</span>
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
-        ) : undefined
-      }
     >
       <div className="space-y-4">
         {/* Loading State */}

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {
   Search,
   Mail,
-  ExternalLink,
   Calendar,
   MessageSquare,
   RefreshCw,
@@ -279,18 +278,6 @@ export const EmailBrowser: React.FC<EmailBrowserProps> = ({ onInspectThread }) =
                     <MessageSquare className="w-3 h-3 mr-1 text-brand-500" />
                     Inspect Thread
                   </Button>
-
-                  {item.gmail_url && (
-                    <a
-                      href={item.gmail_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-1.5 rounded-lg border border-slate-200 text-slate-500 hover:text-brand-600 hover:bg-brand-50 hover:border-brand-200 bg-white shadow-sm transition-colors"
-                      title="Open in Gmail"
-                    >
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  )}
                 </div>
               </div>
             ))}

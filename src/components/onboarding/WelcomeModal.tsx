@@ -112,15 +112,14 @@ export const WelcomeModal: React.FC<WelcomeModalProps> = ({
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center justify-between gap-2">
                     <h4 className="text-sm font-bold text-coral-950">
-                      Step 1 — Send an Email
+                      Step 1 — Send Test Emails
                     </h4>
                     <span className="text-[10px] uppercase font-bold text-coral-800 bg-white border border-coral-200 px-2 py-0.5 rounded-full shadow-subtle">
                       Live Mailbox
                     </span>
                   </div>
-                  <p className="text-xs text-coral-900/80 mt-1 leading-relaxed">
-                    Send a test email with project updates, decisions, meeting notes, or deployment
-                    details (no sensitive info).
+                  <p className="text-xs text-coral-900/85 mt-1 leading-relaxed">
+                    Fire away! Send in as many emails as you want—project decisions, meeting notes, timeline updates, or questions you already know the full context of. Then trigger a sync to put ContextFlow to the test (no sensitive info, please).
                   </p>
                   <div className="mt-2.5 flex items-center gap-2">
                     <div className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-coral-200 rounded-xl text-xs font-mono text-slate-800 select-all shadow-subtle">

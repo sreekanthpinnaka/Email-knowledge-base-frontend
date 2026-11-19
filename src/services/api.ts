@@ -12,7 +12,7 @@ export const apiClient = axios.create({
   },
   // Cloud Run cold start may take 15-30s; bounded evidence retrieval / OpenAI may take longer.
   // Generous timeout prevents client aborting prematurely.
-  timeout: 75000,
+  timeout: 120000,
 });
 
 // Attach Authorization header if session exists

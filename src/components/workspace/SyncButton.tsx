@@ -18,7 +18,7 @@ interface SyncButtonProps {
   className?: string;
 }
 
-const POLLING_TIMEOUT_SECONDS = 90;
+const POLLING_TIMEOUT_SECONDS = 300; // 5 minutes polling window
 
 export const SyncButton: React.FC<SyncButtonProps> = ({ onSyncComplete, className = '' }) => {
   const [job, setJob] = useState<SyncJob | null>(() => {

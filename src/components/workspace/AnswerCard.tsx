@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {
   Sparkles,
-  ExternalLink,
   MessageSquare,
   Sliders,
   Calendar,
@@ -199,28 +198,16 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
                     </div>
 
                     {/* Source Card Actions */}
-                    <div className="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
+                    <div className="mt-3.5 pt-2.5 border-t border-slate-100 flex items-center">
                       <Button
                         variant="outline"
                         size="sm"
                         onClick={() => onInspectThread(src.gmail_thread_id)}
-                        className="text-[11px] py-1 px-2.5 bg-white border-brand-200 text-brand-700 hover:bg-brand-50 hover:border-brand-300 font-semibold"
+                        className="text-[11px] py-1.5 px-3 w-full justify-center bg-white border-brand-200 text-brand-700 hover:bg-brand-50 hover:border-brand-300 font-semibold shadow-subtle"
                       >
-                        <MessageSquare className="w-3 h-3 mr-1 text-brand-500" />
-                        Inspect Thread
+                        <MessageSquare className="w-3.5 h-3.5 mr-1.5 text-brand-500" />
+                        Inspect Original Thread
                       </Button>
-
-                      {src.gmail_url && (
-                        <a
-                          href={src.gmail_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1 text-[11px] font-medium text-brand-700 hover:text-brand-900 hover:underline p-1"
-                        >
-                          <span>Gmail</span>
-                          <ExternalLink className="w-3 h-3" />
-                        </a>
-                      )}
                     </div>
                   </div>
                 );

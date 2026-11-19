@@ -97,10 +97,10 @@ export const WelcomeBanner: React.FC<WelcomeBannerProps> = ({ onOpenFullGuide })
                   <div className="w-6 h-6 rounded-lg bg-coral-500 text-white flex items-center justify-center shrink-0 shadow-sm">
                     <Mail className="w-3.5 h-3.5" />
                   </div>
-                  <span className="text-xs font-bold uppercase tracking-wider">1. Send Test Email</span>
+                  <span className="text-xs font-bold uppercase tracking-wider">1. Send Test Emails</span>
                 </div>
-                <p className="text-xs text-coral-950/80 leading-relaxed">
-                  Send a sample project update, timeline decision, or note to the live demo address.
+                <p className="text-xs text-coral-950/85 leading-relaxed">
+                  Fire away! Send in as many emails as you want—project updates, tricky timeline decisions, or notes you know the context of. Then run a sync to see ContextFlow connect the dots!
                 </p>
               </div>
               <div className="mt-3 flex items-center gap-1.5">
@@ -123,7 +123,7 @@ export const WelcomeBanner: React.FC<WelcomeBannerProps> = ({ onOpenFullGuide })
                 </a>
               </div>
               <div className="text-[10px] text-coral-900/70 mt-2 font-medium">
-                Demo mailbox only • Please do not send confidential data.
+                💡 Tip: Try sending multiple related emails to test multi-turn citation grounding • No sensitive data.
               </div>
             </div>
 

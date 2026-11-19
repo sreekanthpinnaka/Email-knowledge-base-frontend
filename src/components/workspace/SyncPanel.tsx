@@ -20,7 +20,7 @@ interface SyncPanelProps {
   onSyncComplete?: () => void;
 }
 
-const POLLING_TIMEOUT_SECONDS = 90;
+const POLLING_TIMEOUT_SECONDS = 300; // 5 minutes polling window
 
 export const SyncPanel: React.FC<SyncPanelProps> = ({ onSyncComplete }) => {
   const [job, setJob] = useState<SyncJob | null>(() => {

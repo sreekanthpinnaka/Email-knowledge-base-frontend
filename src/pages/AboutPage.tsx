@@ -184,7 +184,7 @@ export const AboutPage: React.FC = () => {
           <span>Factual Verification & Engineering Credibility</span>
         </div>
         <p className="leading-relaxed text-slate-600">
-          While ContextFlow validates that cited claims match verbatim text in the retrieved evidence window, citation validation is not an absolute guarantee of real-world truth. Operational stakeholders should always use the "Inspect Thread" or "View in Gmail" actions to verify business-critical decisions directly in the source conversation.
+          While ContextFlow validates that cited claims match verbatim text in the retrieved evidence window, citation validation is not an absolute guarantee of real-world truth. Operational stakeholders can always use the "Inspect Thread" action to review the full, verified conversation context.
         </p>
       </div>
 
