@@ -141,7 +141,7 @@ export const WelcomeBanner: React.FC<WelcomeBannerProps> = ({ onOpenFullGuide })
                 </p>
               </div>
               <div className="mt-3 text-[11px] font-medium text-sunshine-900/70">
-                Hourly scheduled runs + on-demand webhook execution.
+                Daily scheduled runs + on-demand webhook execution.
               </div>
             </div>
 

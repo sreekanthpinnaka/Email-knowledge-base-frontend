@@ -34,7 +34,7 @@ export const AboutPage: React.FC = () => {
     },
     {
       title: 'n8n Workflow Automation',
-      desc: 'Decoupled scheduled hourly sync from on-demand webhook execution with authenticated status callbacks and history cursors.',
+      desc: 'Decoupled scheduled daily sync from on-demand webhook execution with authenticated status callbacks and history cursors.',
       icon: Workflow,
     },
     {

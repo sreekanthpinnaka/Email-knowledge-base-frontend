@@ -11,6 +11,8 @@ import {
   GitBranch,
   Lock,
   Search,
+  Globe,
+  Cloud,
 } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
@@ -25,7 +27,7 @@ export const UnderTheHoodPage: React.FC = () => {
       badge: 'n8n + Gmail API',
       badgeColor: 'yellow' as const,
       icon: RefreshCw,
-      desc: 'Scheduled hourly workflows or on-demand clicks read new messages from Gmail, extract clean text, and detect changes.',
+      desc: 'Scheduled daily workflows or on-demand clicks read new messages from Gmail, extract clean text, and detect changes.',
     },
     {
       step: '2',
@@ -210,6 +212,107 @@ export const UnderTheHoodPage: React.FC = () => {
               </Card>
             );
           })}
+        </div>
+      </div>
+
+      {/* Production Infrastructure & Hosting */}
+      <div className="space-y-4">
+        <div>
+          <div className="flex items-center gap-2">
+            <h2 className="text-base font-bold text-slate-900">Production Infrastructure & Deployment</h2>
+            <Badge variant="blue" className="text-[10px]">
+              Live Cloud Setup
+            </Badge>
+          </div>
+          <p className="text-xs text-slate-500 mt-0.5">
+            Exact runtime environments, cloud providers, and deployment architecture for frontend and backend:
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Frontend Infra Card */}
+          <Card className="border-slate-200/90 shadow-subtle hover:border-brand-200 transition-all">
+            <CardHeader className="bg-gradient-to-r from-brand-50/60 via-white to-white border-b border-slate-100 pb-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-xl bg-brand-600 text-white flex items-center justify-center shadow-sm">
+                    <Globe className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xs font-bold text-slate-900">Frontend Tier (Client App)</CardTitle>
+                    <p className="text-[10px] text-brand-700 font-medium">React 18 · TypeScript · Vite SPA</p>
+                  </div>
+                </div>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-brand-100 text-brand-800 border border-brand-200">
+                  Client Runtime
+                </span>
+              </div>
+            </CardHeader>
+            <CardContent className="pt-3.5 space-y-2 text-xs text-slate-600">
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Framework:</span>
+                <span>React 18 with strict TypeScript and Vite build bundling</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">UI & Styling:</span>
+                <span>Tailwind CSS with custom design tokens, responsive grid, and Lucide icons</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">State & Cache:</span>
+                <span>TanStack React Query for async cache invalidation, deduplication, and polling</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Network Client:</span>
+                <span>Centralized Axios client with 120s timeout for Cloud Run cold-start handling</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Deployment:</span>
+                <span>Static Single-Page Application (SPA) optimized for fast edge CDN delivery</span>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Backend Infra Card */}
+          <Card className="border-slate-200/90 shadow-subtle hover:border-coral-200 transition-all">
+            <CardHeader className="bg-gradient-to-r from-coral-50/60 via-white to-white border-b border-slate-100 pb-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-xl bg-coral-500 text-white flex items-center justify-center shadow-sm">
+                    <Cloud className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xs font-bold text-slate-900">Backend Tier (API Engine)</CardTitle>
+                    <p className="text-[10px] text-coral-700 font-medium">FastAPI on Google Cloud Run</p>
+                  </div>
+                </div>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-coral-100 text-coral-800 border border-coral-200">
+                  Google Cloud Run
+                </span>
+              </div>
+            </CardHeader>
+            <CardContent className="pt-3.5 space-y-2 text-xs text-slate-600">
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Compute Host:</span>
+                <span><strong>Google Cloud Run</strong> (<code className="text-[11px] bg-slate-100 px-1 py-0.5 rounded text-slate-800 font-mono">us-east4</code> serverless container)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Runtime:</span>
+                <span>FastAPI (Python 3.11 asynchronous ASGI web framework via Uvicorn)</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Autoscaling:</span>
+                <span>Scale-to-zero when idle for cost-efficiency; horizontal auto-concurrency under traffic</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Database:</span>
+                <span>Supabase PostgreSQL + <code className="text-[11px] bg-slate-100 px-1 py-0.5 rounded text-slate-800 font-mono">pgvector</code> for 1536-dim cosine similarity</span>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="font-semibold text-slate-800 min-w-[85px] shrink-0">Automation:</span>
+                <span>n8n workflow webhooks, OpenAI API (<code className="text-[11px] bg-slate-100 px-1 py-0.5 rounded text-slate-800 font-mono">gpt-4.1-mini</code>), and Gmail API OAuth2</span>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
 

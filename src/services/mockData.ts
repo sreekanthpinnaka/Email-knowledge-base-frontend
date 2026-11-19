@@ -130,7 +130,7 @@ export const MOCK_THREADS: Record<string, ThreadResponse> = {
         recipients: 'ops@spineops.internal',
         received_at: new Date(Date.now() - 3600000 * 26).toISOString(),
         labels: ['INBOX', 'AUTOMATION'],
-        body: `Hi Operations Team,\n\nThe automated n8n workflow for incremental Gmail sync is now active.\n\nImportant operational details:\n- The hourly scheduled workflow acquires an incremental lease of 90 minutes.\n- The manual controller webhook responds immediately with HTTP 202 and then runs sub-workflows.\n- Callbacks authenticate with FastAPI via the X-Sync-Token header.\n\nPriya`,
+        body: `Hi Operations Team,\n\nThe automated n8n workflow for incremental Gmail sync is now active.\n\nImportant operational details:\n- The daily scheduled workflow acquires an incremental lease.\n- The manual controller webhook responds immediately with HTTP 202 and then runs sub-workflows.\n- Callbacks authenticate with FastAPI via the X-Sync-Token header.\n\nPriya`,
       },
     ],
   },

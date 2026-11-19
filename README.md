@@ -41,7 +41,7 @@ It demonstrates end-to-end capabilities in operational workflow automation, API 
 
 6. **Interactive "Under the Hood" Architecture Page**
    - Visual step-by-step breakdown of the grounded retrieval pipeline.
-   - Visual breakdown of the dual-workflow n8n ingestion architecture (Scheduled hourly vs. User-triggered sync).
+   - Visual breakdown of the dual-workflow n8n ingestion architecture (Scheduled daily vs. User-triggered sync).
    - Transparent engineering audit detailing intentional omissions (e.g., why Redis, streaming, or background queues were deliberately omitted in favor of verifiable correctness and cost efficiency).
 
 ---

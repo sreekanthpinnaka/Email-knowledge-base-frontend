@@ -266,7 +266,7 @@ export const SyncPanel: React.FC<SyncPanelProps> = ({ onSyncComplete }) => {
       {/* Action Buttons */}
       <div className="px-6 pb-5 pt-2 flex items-center justify-between gap-3 border-t border-slate-100 mt-2">
         <div className="text-[11px] text-slate-400">
-          {job?.created_at ? `Job: ${formatDate(job.created_at)}` : 'Hourly cron active'}
+          {job?.created_at ? `Job: ${formatDate(job.created_at)}` : 'Daily cron active'}
         </div>
 
         <div className="flex items-center gap-2">
